@@ -23,7 +23,7 @@ def solution(cards):
             cur = nxt
         heappush(card_counts, -count)
 
-    if len(card_counts) > 2:
+    if len(card_counts) >= 2:
         a = heappop(card_counts)
         b = heappop(card_counts)
         return a * b
