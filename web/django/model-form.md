@@ -1,4 +1,4 @@
-(블로그)[https://velog.io/@cyeongy/Django-Model%EA%B3%BC-Form-1]
+> (블로그)[https://velog.io/@cyeongy/Django-Model%EA%B3%BC-Form-1]
 
 # Model과 Form
 
@@ -88,6 +88,6 @@ text = models.TextField(null=True, blank=True)
 
 
 
-> [10. null=True 와 blank=True 의 차이가 무엇인가요?](https://django-orm-cookbook-ko.readthedocs.io/en/latest/null_vs_blank.html)
-[TIL.57 null=True 와 blank=True 의 차이(Django)](https://codermun-log.tistory.com/154)
-[(번역) Django Tips #8 Blank or Null?](https://wayhome25.github.io/django/2017/09/23/django-blank-null/)
+> [10. null=True 와 blank=True 의 차이가 무엇인가요?](https://django-orm-cookbook-ko.readthedocs.io/en/latest/null_vs_blank.html) 
+>[TIL.57 null=True 와 blank=True 의 차이(Django)](https://codermun-log.tistory.com/154)
+>[(번역) Django Tips #8 Blank or Null?](https://wayhome25.github.io/django/2017/09/23/django-blank-null/)
