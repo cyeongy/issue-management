@@ -1,4 +1,4 @@
-> (블로그)[https://velog.io/@cyeongy/Django-Model%EA%B3%BC-Form-1]
+> [블로그](https://velog.io/@cyeongy/Django-Model%EA%B3%BC-Form-1)
 
 # Model과 Form
 
