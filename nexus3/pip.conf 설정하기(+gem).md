@@ -45,7 +45,7 @@ Gem의 경우 아래와 같은 명령어로 편집할 수 있다.
 
 
 ```bash
-gem sources --add http://localhost:8081/repository/{루비젬 repo}/groups/gems-all/
+gem sources --add http://localhost:8081/repository/{루비젬 repo}/
 
 gem sources --remove https://rubygems.org/
 
