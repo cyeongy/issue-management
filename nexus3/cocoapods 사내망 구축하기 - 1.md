@@ -12,8 +12,17 @@
 
 ## podspec
 
-코코아팟에서 pod install을 하는 이유는 개발을 편하게 하기 위해 다른 사람이 작성한 코드, 패키지를 다운받기 위함입니다. 아래 포스트를 읽으면서 큰 도움이 되어 일부 발췌하였습니다.
+```bash
+#!/usr/bin/env bash
 
+rm -rf "${HOME}/Library/Caches/CocoaPods"
+rm -rf "`pwd`/Pods/"
+pod update
+```
+
+>https://gist.github.com/mbinna/4202236
+
+코코아팟에서 pod install을 하는 이유는 개발을 편하게 하기 위해 다른 사람이 작성한 코드, 패키지를 다운받기 위함입니다. 아래 포스트를 읽으면서 큰 도움이 되어 일부 발췌하였습니다.
 
 >
 ```rb
