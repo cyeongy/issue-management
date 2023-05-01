@@ -92,7 +92,7 @@ cocoapods에서 기본적으로 source repo를 했을 때, 기본값으로 세�
 
 2. pod의 이름을 SHA(md5) 해싱 후 첫 3글자를 가져옵니다. 
 
-ex) Toast-Swift -> __424__4FC178EA68ACF265646D58FD57B11
+ex) Toast-Swift -> **424**4FC178EA68ACF265646D58FD57B11
 
 3. cdn.cocoapods.org/all_pods.txtall_pods_version\_?\_?\_?.txt 에서 버전을 조회합니다.
 
