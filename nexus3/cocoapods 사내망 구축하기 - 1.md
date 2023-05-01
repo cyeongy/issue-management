@@ -44,11 +44,11 @@ end
 ```
 >(1) CocoaPods는 PodSpec을 통해서 라이브러리를 인식하고 분류합니다. 그러한 PodSpec이 있는 주소를 알아야 제대로 작동합니다. https://github.com/CocoaPods/Specs.git 는 따로 적지 않아도 기본값으로 세팅되어 있습니다.
 >
-(2) 원하는 Specs 저장소를 연결 할 수 있습니다. 기업에서 사용할 때 private한 Specs 저장소로 사용하곤 했습니다.
+>(2) 원하는 Specs 저장소를 연결 할 수 있습니다. 기업에서 사용할 때 private한 Specs 저장소로 사용하곤 했습니다.
 >
-(3) platform :ios, '9.0' 해당 플랫폼, 버전에 맞춰서 설치합니다. 해당 라이브러리가 지원하는 경우에만 설치하게 됩니다.
+>(3) platform :ios, '9.0' 해당 플랫폼, 버전에 맞춰서 설치합니다. 해당 라이브러리가 지원하는 경우에만 설치하게 됩니다.
 >
-(4) inhibit_all_warnings! 를 써두면 빌드 시에 라이브러리에서 발생하는 warning을 무시합니다. 불필요한 warning이 너무 많으면 필요한 정보를 놓칠 수 있습니다.
+>(4) inhibit_all_warnings! 를 써두면 빌드 시에 라이브러리에서 발생하는 warning을 무시합니다. 불필요한 warning이 너무 많으면 필요한 정보를 놓칠 수 있습니다.
 >
  [CocoaPods 사용법과 파일구조](https://medium.com/@hongseongho/cocoapods-%EC%82%AC%EC%9A%A9%EB%B2%95%EA%B3%BC-%ED%8C%8C%EC%9D%BC%EA%B5%AC%EC%A1%B0-c0ea2ef362d6)
 
