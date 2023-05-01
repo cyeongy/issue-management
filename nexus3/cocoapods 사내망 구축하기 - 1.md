@@ -87,13 +87,19 @@ end
 cocoapods에서 기본적으로 source repo를 했을 때, 기본값으로 세팅된 repo의 위치를 표시하는 코드입니다. CDN에서 아래와 같은 순서로 podspec.json을 받아옵니다.
 
 1. cdn.cocoapods.org/all_pods.txt 에서 pod의 이름을 조회하고
+
 -> http://cdn.cocoapods.org/all_pods.txt
 2. pod의 이름을 SHA(md5) 해싱 후 첫 3글자를 가져옵니다. 
+
 ex) Toast-Swift -> __424__4FC178EA68ACF265646D58FD57B11
 3. cdn.cocoapods.org/all_pods.txtall_pods_version\_?\_?\_?.txt 에서 버전을 조회합니다.
+
 ex) https://cdn.cocoapods.org/all_pods_versions_4_2_4.txt
 4. podfile에서 지정한 버전이 존재하면 podspec.json을 가져옵니다. 
+
 ex) https://cdn.jsdelivr.net/cocoa/Specs/4/2/4/Toast-Swift/5.0.1/Toast-Swift.podspec.json
+
 #### cdn.jsdeliver.net/cocoa는 코코아팟의 Spec.git의 cdn 주소입니다.
+
 https://github.com/CocoaPods/Specs/blob/master/Specs/4/2/4/Toast-Swift/5.0.1/Toast-Swift.podspec.json 
 https://cdn.jsdelivr.net/cocoa/Specs/4/2/4/Toast-Swift/5.0.1/Toast-Swift.podspec.json
