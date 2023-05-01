@@ -21,6 +21,7 @@ pod update가 실패하면 아래처럼 기존에 존재하던 소스 코드 라
 
 ```bash
 pod cache clean --all
+pod update
 ```
 
 
