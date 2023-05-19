@@ -1,0 +1,8 @@
+common:
+  ldap:
+    user: "##"
+    password: "##"
+    
+  jdk:
+    version: jdk-11.0.2
+    hostsname: "바이너리 다운로드 hostname"
