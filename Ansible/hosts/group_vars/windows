@@ -1,0 +1,12 @@
+ansible_user: &winrm_user winrm_user
+ansible_password: winrm_password
+ansible_connection: winrm
+ansible_shell_type: powershell
+ansible_winrm_server_cert_validation: ignore
+
+download:
+  path: &download_path C:\Users\winrm_user\Downloads
+  
+jdk:
+  path: C:\Program Files\Java
+  extension: '_windows-x64_bin.zip'
