@@ -1,0 +1,10 @@
+ansible_user: ssh_username
+ansible_password: ssh_password
+
+download:
+  path: &download_path ~/downloads
+  
+jdk:
+  path: /usr/lib/jvm
+  extension: "_linux-x64_bin.tar.gz"
+  
