@@ -1,0 +1,13 @@
+---
+- name: install git for windows
+  hosts: windows
+  tasks:
+    - name: download git
+      win_package:
+        path: "깃 다운로드 URL"
+        arguments:
+          - /verysilent
+          - /norestart
+        # 사내 저장소에 로그인이 필요한 경우 해당 문구를 추가합시다
+        # url_username: "{{ common.ldap.user }}"
+        # url_password: "{{ common.ldap.password }}"
