@@ -1,0 +1,14 @@
+---
+- name: install svn for windows
+  hosts: windows
+  tasks:
+    - name: download svn
+      win_package:
+        path: "SVN 다운로드 URL"
+        arguments:
+          - ADDLOCAL=ALL
+        # Tortoise SVN 인스톨러의 경우 msi 형식이므로 /q 옵션이 자동으로 추가됩니다.
+        
+        # 사내 저장소에 로그인이 필요한 경우 해당 문구를 추가합시다
+        # url_username: "{{ common.ldap.user }}"
+        # url_password: "{{ common.ldap.password }}"
