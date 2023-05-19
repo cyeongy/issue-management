@@ -1,0 +1,94 @@
+---
+- name: install jdk for windows
+  hosts: windows
+  tasks:
+    - name: check download directory
+      win_file:
+        path: "{{ download.path }}"
+        state: directory
+        
+    - name: download jdk
+      win_get_url:
+        url: "https://{{ common.jdk.hostname | urlencode }}{{ common.jdk.verion | urlencode }}{{ jdk.extension | urlencode }}"
+        deset: "{{ download.path }}\\{{ common.jdk.version }}{{ jdk.extension }}"
+        url_username: "{{ common.ldap.user }}"
+        url_password: "{{ common.ldap.password }}"
+        
+    - name: unzip jdk
+      win_unzip:
+        src: "{{ download.path }}\\{{ common.jdk.version }}{{ jdk.extension }}"
+        creates: "{{ jdk.path }}\\{{ common.jdk.version }}"
+        dest: "{{ jdk.path }}"
+        remote_src: yes
+        
+    - name: export JAVA_HOME
+      win_path:
+        name: JAVA_HOME
+        elements: "{{ jdk.path }}\\{{ common.jdk.version }}"
+    
+    - name: export CLASSPATH
+      win_path:
+        name: CLASSPATH
+        elements: "$JAVA_HOME%\\lib"
+        
+    - name: export JAVA_PATH
+      win_path:
+        elements: 
+          - "%JAVA_HOME%\\bin"
+          
+          
+- name: install jdk for linux
+  hosts: linux
+  tasks:
+    - name: check download directory
+      file:
+        path: "{{ download.path }}"
+        state: directory
+        
+    - name: download jdk
+      win_get_url:
+        url: "https://{{ common.jdk.hostname | urlencode }}{{ common.jdk.verion | urlencode }}{{ jdk.extension | urlencode }}"
+        deset: "{{ download.path }}\\{{ common.jdk.version }}{{ jdk.extension }}"
+        url_username: "{{ common.ldap.user }}"
+        url_password: "{{ common.ldap.password }}"
+        
+    - name: create jdk path
+      file:
+        path: "{{ jdk.path }}"
+        state: directory
+      become: yes
+      
+    - name: unzip jdk
+      unarchive:
+        src: "{{ download.path }}\\{{ common.jdk.version }}{{ jdk.extension }}"
+        dest: "{{ jdk.path }}"
+        remote_src: yes
+      become: yes
+    
+    - name: export java PATH
+      lineinfile:
+        path: ~/.bashrc
+        state: present
+        line: "{{ item }}"
+      with_items:
+        - export JAVA_HOME={{ jdk.path }}/{{ common.jdk.version }}
+        - export PATH=${JAVA_HOME}/bin:${PATH}
+        
+# Jenkins agent via SSH 로 연결 시 .profile 혹은 .bashrc 가 source가 안되는 현상이 존재합니다.
+# 기존 심볼릭 링크를 지우고 새로 연결하는 스크립트이니 없애도 무방합니다.
+
+    - file:
+        path: /usr/bin/java
+        state: absent
+      become: yes
+      
+    - name: create symlink [= ln -s /usr/lib/jvm/jdk-11.0.2/bin/java /usr/bin/java]
+      file:
+        src: "{{ jdk.path }}{{ common.jdk.version }}/bin/java"
+        dest: "/usr/bin/java/"
+        state: link
+        mode: "0755"
+        force: yes
+      become: yes
+      
+    
