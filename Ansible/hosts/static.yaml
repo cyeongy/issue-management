@@ -1,0 +1,9 @@
+all:
+  children:
+    windows:
+      hosts:
+        10.92.181.[26:28]
+    linux:
+      hosts:
+        10.92.114.[67:69]
+        
