@@ -8,7 +8,7 @@ blog : http://velog.io/@cyeongy
 
 1. [01. 젠킨스 한글 에러.md](./젠킨스/01.%20젠킨스%20한글%20에러.md)
 2. [02. jenkins parallel 문법.md](./젠킨스/02.%20jenkins%20parallel%20문법.md)
-3. [03. Jenkins SSH plugins 문제점.md](./젠킨스/03.%20Jenkins%20SSH%20plugins-문제점.md)
+3. [03. Jenkins SSH plugins 문제점.md](./젠킨스/03.%20Jenkins%20SSH%20plugins%20문제점.md)
 
 ## Nexus3
 
