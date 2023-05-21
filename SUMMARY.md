@@ -9,7 +9,7 @@
   * [Spec Repo](<cocoapods/01. Spec Repo.md>)
   * [Library Repo](cocoapods/02.-lib-repo.md)
 * [nexus3](nexus3/README.md)
-  * [Nexus3 Repository 사내망 구축하기](nexus3/build-pypi-repository.md)
+  * [pip.conf 설정하기(+gem)](nexus3/configure-pip.md)
   * [rubygem 저장소 만들기-1](<nexus3/rubygem 저장소 만들기-1.md>)
   * [rubygem 저장소 만들기-2](<nexus3/rubygem 저장소 만들기-2.md>)
 * [도커](undefined/README.md)
