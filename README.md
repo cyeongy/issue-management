@@ -14,7 +14,7 @@ blog : http://velog.io/@cyeongy
 
 ## Nexus3
 
-* [Nexus3 Repository 사내망 구축하기](nexus3/configure-pip.md)
+* [pip.conf 설정하기(+gem)](nexus3/configure-pip.md)
 * [rubygem 저장소 만들기-1](<nexus3/rubygem 저장소 만들기-1.md>)
 * [rubygem 저장소 만들기-2](<nexus3/rubygem 저장소 만들기-2.md>)
 
