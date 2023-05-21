@@ -8,9 +8,9 @@ blog : http://velog.io/@cyeongy
 
 ## Jenkins
 
-1. [01. 젠킨스 한글 에러.md](%EC%A0%A0%ED%82%A8%EC%8A%A4/01.%20%EC%A0%A0%ED%82%A8%EC%8A%A4%20%ED%95%9C%EA%B8%80%20%EC%97%90%EB%9F%AC.md)
-2. [02. jenkins parallel 문법.md](%EC%A0%A0%ED%82%A8%EC%8A%A4/02.%20jenkins%20parallel%20%EB%AC%B8%EB%B2%95.md)
-3. [03. Jenkins SSH plugins 문제점.md](%EC%A0%A0%ED%82%A8%EC%8A%A4/03.%20Jenkins%20SSH%20plugins%20%EB%AC%B8%EC%A0%9C%EC%A0%90.md)
+1. [01. 젠킨스 한글 에러.md](jenkins/01.%20%EC%A0%A0%ED%82%A8%EC%8A%A4%20%ED%95%9C%EA%B8%80%20%EC%97%90%EB%9F%AC.md)
+2. [02. jenkins parallel 문법.md](jenkins/02.%20jenkins%20parallel%20%EB%AC%B8%EB%B2%95.md)
+3. [03. Jenkins SSH plugins 문제점.md](jenkins/03.%20Jenkins%20SSH%20plugins%20%EB%AC%B8%EC%A0%9C%EC%A0%90.md)
 
 ## Nexus3
 
