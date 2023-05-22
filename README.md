@@ -8,9 +8,9 @@ blog : http://velog.io/@cyeongy
 
 ## Jenkins
 
-* [#undefined](jenkins/jenkins-hangul-error.md#undefined "mention")
-* [#jenkins-parallel](jenkins/jenkins-parallel.md#jenkins-parallel "mention")
-* [#jenkins-ssh-plugins](jenkins/jenkins-ssh-plugins.md#jenkins-ssh-plugins "mention")
+* [jenkins-hangul-error.md](jenkins/jenkins-hangul-error.md "mention")
+* [jenkins-parallel.md](jenkins/jenkins-parallel.md "mention")
+* [jenkins-ssh-plugins.md](jenkins/jenkins-ssh-plugins.md "mention")
 
 ## Nexus3
 
