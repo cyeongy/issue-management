@@ -14,30 +14,30 @@ blog : http://velog.io/@cyeongy
 
 ## Nexus3
 
-* [#pip](nexus3/configure-pip.md#pip "mention")
-* [#rubygem-1](<nexus3/rubygem 저장소 만들기-1.md#rubygem-1> "mention")
-* [#rubygem-2](<nexus3/rubygem 저장소 만들기-2.md#rubygem-2> "mention")
+* [configure-pip.md](nexus3/configure-pip.md "mention")
+* [rubygem 저장소 만들기-1.md](<nexus3/rubygem 저장소 만들기-1.md> "mention")
+* [rubygem 저장소 만들기-2.md](<nexus3/rubygem 저장소 만들기-2.md> "mention")
 
 ## Ansbile
 
-* [#ansible](ansible/install-ansible.md#ansible "mention")
-* \#
+* [install-ansible.md](ansible/install-ansible.md "mention")
+* [ansible-system-variable.md](ansible/ansible-system-variable.md "mention")
 
 ## Cocoapods
 
-* [cocoapods 사내망 구축하기](cocoapods/build-private-cocoapods.md)
-* [Spec Repo](cocoapods/spec-repo.md)
-* [Library Repo](cocoapods/lib-repo.md)
+* [build-private-cocoapods.md](cocoapods/build-private-cocoapods.md "mention")
+* [spec-repo.md](cocoapods/spec-repo.md "mention")
+* [lib-repo.md](cocoapods/lib-repo.md "mention")
 
 ## docker
 
-* [도커 시작하기](docker/install-docker.md)
-* [K3s 인스톨](docker/install-k3s.md)
+* [install-docker.md](docker/install-docker.md "mention")
+* [install-k3s.md](docker/install-k3s.md "mention")
 
 ## Python
 
-* [CPython 빌드하기](python/build-cpython.md)
+* [build-cpython.md](python/build-cpython.md "mention")
 
 ## Java
 
-* [맥 OSX Java, JDK 경로](java/osx/osx-jdk-path.md)
+* [osx](java/osx/ "mention")
