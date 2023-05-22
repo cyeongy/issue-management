@@ -1,10 +1,6 @@
 # 앤서블 설치 및 준비
 
-
-
-## 앤서블 설치 및 준비
-
-### 앤서블 (Ansible)
+## 앤서블 (Ansible)
 
 앤서블은 RedHat에서 공개, 관리하는 오픈 소스 프로비저닝 툴입니다.
 
@@ -18,9 +14,9 @@
 
 OpenSSH 의 경우 해당 문서에서 언급하지 않습니다.
 
-### 설치 사양 및 준비
+## 설치 사양 및 준비
 
-#### 제어 노드 (Control Node, Master)
+### 제어 노드 (Control Node, Master)
 
 * Linux, Unix
   * Python2 (>= 2.7) or Python3 (>= 3.5)
@@ -28,7 +24,7 @@ OpenSSH 의 경우 해당 문서에서 언급하지 않습니다.
   * Windows에서 앤서블을 설치하여 다른 OS를 관리하는 기능은 제공하지 않습니다
   * WSL(Window Subsystem for Linux)를 사용하여 Ansible을 설치할 수 있습니다.
 
-#### 관리 노드
+### 관리 노드
 
 * Linux, Unix
   * Python2 (>= 2.7) or Python3 (>= 3.5)
@@ -40,7 +36,7 @@ OpenSSH 의 경우 해당 문서에서 언급하지 않습니다.
   * WinRM 활성화
   * WinRM Auth/Basic = True 활성화
 
-#### WinRM 활성화
+### WinRM 활성화
 
 ```powershell
 # WinRM 활성화
@@ -60,7 +56,7 @@ winrm e winrm/config/listener
 
 ```
 
-### Ansible 설치
+## Ansible 설치
 
 ```bash
 pip3 install ansible
@@ -71,9 +67,9 @@ apt, yum 등의 여러 인스톨이 가능하나 git에서 개발 리소스로 �
 
 추후 ansible 모듈을 직접 개발하는 가능성도 열어 두기 위함입니다.
 
-### Ansible 연결
+## Ansible 연결
 
-#### SSH
+### SSH
 
 #### 패키지 설치
 
@@ -83,7 +79,7 @@ apt, yum 등의 여러 인스톨이 가능하나 git에서 개발 리소스로 �
 sudo apt install sshpass
 ```
 
-#### SSH Key 등록하기 (비밀번호 미사용)
+### SSH Key 등록하기 (비밀번호 미사용)
 
 * ssh-keygen
 * ssh-copy-id
@@ -99,7 +95,7 @@ ssh-copy-id username@hostname
 ssh-copy-id ubuntu@10.92.114.67
 ```
 
-#### Known Host 등록하기 (비밀번호 사용)
+### Known Host 등록하기 (비밀번호 사용)
 
 * ssh-keyscan
 * 옵션
