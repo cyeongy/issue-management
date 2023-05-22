@@ -37,6 +37,7 @@ blog : http://velog.io/@cyeongy
 ### Python
 
 * [CPython 빌드하기](python/build-cpython.md)
+* [ModuleNotFound: SSL 에러](python/modulenotfound-ssl-error.md)
 
 ### Java
 
