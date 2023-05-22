@@ -1,4 +1,10 @@
-# 앤서블 (Ansible)
+# 앤서블 설치 및 준비
+
+
+
+## 앤서블 설치 및 준비
+
+### 앤서블 (Ansible)
 
 앤서블은 RedHat에서 공개, 관리하는 오픈 소스 프로비저닝 툴입니다.
 
@@ -12,31 +18,29 @@
 
 OpenSSH 의 경우 해당 문서에서 언급하지 않습니다.
 
-# 설치 사양 및 준비
+### 설치 사양 및 준비
 
-## 제어 노드 (Control Node, Master)
+#### 제어 노드 (Control Node, Master)
 
-- Linux, Unix
-  - Python2 (>= 2.7) or Python3 (>= 3.5)
-- Windows
-  - Windows에서 앤서블을 설치하여 다른 OS를 관리하는 기능은 제공하지 않습니다
-  - WSL(Window Subsystem for Linux)를 사용하여 Ansible을 설치할 수 있습니다.
+* Linux, Unix
+  * Python2 (>= 2.7) or Python3 (>= 3.5)
+* Windows
+  * Windows에서 앤서블을 설치하여 다른 OS를 관리하는 기능은 제공하지 않습니다
+  * WSL(Window Subsystem for Linux)를 사용하여 Ansible을 설치할 수 있습니다.
 
-## 관리 노드
+#### 관리 노드
 
-- Linux, Unix
-  - Python2 (>= 2.7) or Python3 (>= 3.5)
-  - SSH (기본 22포트)
-- Windows
-  - Powershell (>= 3.0) & .Net Framework (>= 4.0)
-    (파워쉘 3.0 버전에는 메모리 핫픽스가 필요합니다. 4.0 이상을 추천합니다.)
-  - WinRM (5985, 5986 포트)
-  - Windows 2008 SP1 이상
-  - WinRM 활성화
-  - WinRM Auth/Basic = True 활성화
+* Linux, Unix
+  * Python2 (>= 2.7) or Python3 (>= 3.5)
+  * SSH (기본 22포트)
+* Windows
+  * Powershell (>= 3.0) & .Net Framework (>= 4.0) (파워쉘 3.0 버전에는 메모리 핫픽스가 필요합니다. 4.0 이상을 추천합니다.)
+  * WinRM (5985, 5986 포트)
+  * Windows 2008 SP1 이상
+  * WinRM 활성화
+  * WinRM Auth/Basic = True 활성화
 
-
-### WinRM 활성화
+#### WinRM 활성화
 
 ```powershell
 # WinRM 활성화
@@ -56,8 +60,7 @@ winrm e winrm/config/listener
 
 ```
 
-
-# Ansible 설치
+### Ansible 설치
 
 ```bash
 pip3 install ansible
@@ -68,20 +71,22 @@ apt, yum 등의 여러 인스톨이 가능하나 git에서 개발 리소스로 �
 
 추후 ansible 모듈을 직접 개발하는 가능성도 열어 두기 위함입니다.
 
-# Ansible 연결
+### Ansible 연결
 
-## SSH
+#### SSH
 
-### 패키지 설치
+#### 패키지 설치
+
 앤서블 연결을 위해 필요한 패키지를 설치해야합니다.
+
 ```
 sudo apt install sshpass
 ```
 
-### SSH Key 등록하기 (비밀번호 미사용)
+#### SSH Key 등록하기 (비밀번호 미사용)
 
-- ssh-keygen
-- ssh-copy-id
+* ssh-keygen
+* ssh-copy-id
 
 ```bash
 # ssh 키 생성하기
@@ -94,17 +99,17 @@ ssh-copy-id username@hostname
 ssh-copy-id ubuntu@10.92.114.67
 ```
 
-### Known Host 등록하기 (비밀번호 사용)
+#### Known Host 등록하기 (비밀번호 사용)
 
-- ssh-keyscan
-- 옵션
-  - -H : 호스트 이름 해싱
-  - -t : 암호화 타입 지정 (rsa, ecdsa, ... 기본값은 대표적인 암호화 4개)
-  - -f : 파일로 지정
-  - -v : verbose
-  - -p : port
-  - -4 : IPv4만 등록
-  - -6 : IPv6만 등록
+* ssh-keyscan
+* 옵션
+  * \-H : 호스트 이름 해싱
+  * \-t : 암호화 타입 지정 (rsa, ecdsa, ... 기본값은 대표적인 암호화 4개)
+  * \-f : 파일로 지정
+  * \-v : verbose
+  * \-p : port
+  * \-4 : IPv4만 등록
+  * \-6 : IPv6만 등록
 
 ```bash
 ssh-keyscan -t rsa [-f 호스트파일] 10.92.114.67 >> ~/.ssh/known_hosts
@@ -115,27 +120,31 @@ ssh-keyscan -t rsa [-f 호스트파일] 10.92.114.67 >> ~/.ssh/known_hosts
 aws.devops.com
 10.92.181.26, 10.92.181.27, 10.36.29.21, 10.36.48.12
 ```
-> SSH 접속이나 ssh-copy-id 를 통해 등록하는 경우 (yes/no/[fingerprint]) 를 입력하는 과정이 Knwon hosts 등록 과정입니다. 
-> 
+
+> SSH 접속이나 ssh-copy-id 를 통해 등록하는 경우 (yes/no/\[fingerprint]) 를 입력하는 과정이 Knwon hosts 등록 과정입니다.
+>
 > known host를 등록하는 ssh-keyscan은 Jenkins via SSH 에서 known host policy 에서 요긴하게 사용할 수 있습니다.
-> 
+>
 > 앤서블에서 Knonw hosts 옵션을 무시하는 방법도 있으나 추천하지 않습니다.
-> 
+>
 > 방법은 아래와 같습니다
+>
 > 1. 환경변수 등록
+>
 > ```bash
 > export ANSIBLE_HOST_KEY_CHECKING=False
 > ```
+>
 > 2. ansible.cfg 편집
+>
 > ```ansible.cfg
 > [default]
 > hosts_key_checking = False
 > ```
 
+### WinRM
 
-## WinRM
-
-### pywinrm 설치
+#### pywinrm 설치
 
 앤서블에서 윈도우를 관리하려면 winrm으로 제어하며, pywinrm 패키지를 설치해야합니다.
 

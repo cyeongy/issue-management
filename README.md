@@ -8,20 +8,20 @@ blog : http://velog.io/@cyeongy
 
 ## Jenkins
 
-* [젠킨스 한글 에러](jenkins/jenkins-hangul-error.md)
-* [jenkins parallel 문법](jenkins/jenkins-parallel.md)
-* [Jenkins SSH plugins 문제점](jenkins/jenkins-ssh-plugins.md)
+* [#undefined](jenkins/jenkins-hangul-error.md#undefined "mention")
+* [#jenkins-parallel](jenkins/jenkins-parallel.md#jenkins-parallel "mention")
+* [#jenkins-ssh-plugins](jenkins/jenkins-ssh-plugins.md#jenkins-ssh-plugins "mention")
 
 ## Nexus3
 
-* [pip.conf 설정하기(+gem)](nexus3/configure-pip.md)
-* [rubygem 저장소 만들기-1](<nexus3/rubygem 저장소 만들기-1.md>)
-* [rubygem 저장소 만들기-2](<nexus3/rubygem 저장소 만들기-2.md>)
+* [#pip](nexus3/configure-pip.md#pip "mention")
+* [#rubygem-1](<nexus3/rubygem 저장소 만들기-1.md#rubygem-1> "mention")
+* [#rubygem-2](<nexus3/rubygem 저장소 만들기-2.md#rubygem-2> "mention")
 
 ## Ansbile
 
-* [앤서블 설치 및 준비](ansible/install-ansible.md)
-* [앤서블 변수](ansible/ansible-system-variable.md)
+* [#ansible](ansible/install-ansible.md#ansible "mention")
+* \#
 
 ## Cocoapods
 
