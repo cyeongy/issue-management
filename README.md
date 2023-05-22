@@ -31,8 +31,8 @@ blog : http://velog.io/@cyeongy
 
 ## docker
 
-* [도커 시작하기](undefined/install-docker.md)
-* [K3s 인스톨](undefined/install-k3s.md)
+* [도커 시작하기](docker/install-docker.md)
+* [K3s 인스톨](docker/install-k3s.md)
 
 ## Python
 
