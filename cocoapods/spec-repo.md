@@ -1,14 +1,12 @@
 # Spec Repo
 
-## Spec Repo
-
-### offline 설치하기
+## offline 설치하기
 
 코코아팟 라이브러리를 구축하려면 두 종류의 리포지토리가 필요하다. 하나는 Podspec을 저장하는 Spec 리포지토리이고, 다른 하나는 실제 소스코드가 저장된, Podspec이 가리키고 있는 Library 리포지토리이다.
 
 실제 개발을 하면서 pod lib create를 통해 만들고 적용할 수도 있지만, 오프라인, 망분리, 사내망, 폐쇄망 환경에서 cocoapods.org에 위치한 Public Repo를 카피하는 것이 목표이니 빌드를 위한 미러 서버를 구축한다 생각하면 좋을 것 같습니다.
 
-### Spec Repo
+## Spec Repo
 
 Spec 리포지토리는 cocoapods에서 사용할 수 있는 소스 코드 Libarary들의 스펙과 url을 알려주는 저장소이다. cocoapods의 [Public Spec Repo](https://github.com/CocoaPods/Specs) 은 압축된 아카이빙 파일로 500MB가 넘는 데이터를 가지고 있기 때문에 지난 포스트에서 언급한 [CDN](https://github.com/CocoaPods/cdn.cocoapods.org) 에서 Spec을 제공합니다. 실제 캐시파일을 보면 podspec.json 형식으로 저장되는데 podspec.json 형식도 가능하다면, 개인적으로 podspec 작성이 조금 더 쉬워질 것 같기도 합니다.
 
@@ -52,7 +50,7 @@ Spec 디렉토리의 경우 아래의 포맷과 예제를 보고 작성하시면
 
 해당 포스팅에서는 Git만을 사용하되, Git을 설치한 상태에서 파일시스템에서 꼼수로 관리하는 법을 알려드리겠습니다.
 
-### Spec Repo 추가하기
+## Spec Repo 추가하기
 
 ```bash
 pod repo add [SPEC REPO 이름] [SPEC REPO URL]

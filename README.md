@@ -26,8 +26,8 @@ blog : http://velog.io/@cyeongy
 ## Cocoapods
 
 * [cocoapods 사내망 구축하기](cocoapods/build-private-cocoapods.md)
-* [Spec Repo](<cocoapods/01. Spec Repo.md>)
-* [Library Repo](cocoapods/02.-lib-repo.md)
+* [Spec Repo](cocoapods/spec-repo.md)
+* [Library Repo](cocoapods/lib-repo.md)
 
 ## docker
 
