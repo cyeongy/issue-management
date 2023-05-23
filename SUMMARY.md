@@ -22,6 +22,7 @@
 * [python](python/README.md)
   * [CPython 빌드하기](python/build-cpython.md)
   * [ModuleNotFound: SSL Error](python/modulenotfound-ssl-error.md)
+  * [Amazon-linux2](python/amazon-linux2.md)
 * [java](java/README.md)
   * [osx](java/osx/README.md)
     * [맥 OSX Java, JDK 경로](java/osx/osx-jdk-path.md)
