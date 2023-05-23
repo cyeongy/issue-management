@@ -38,6 +38,7 @@ blog : http://velog.io/@cyeongy
 
 * [CPython 빌드하기](python/build-cpython.md)
 * [ModuleNotFound: SSL 에러](python/modulenotfound-ssl-error.md)
+* [Amazon Linux2](python/amazon-linux2.md)
 
 ### Java
 
