@@ -22,6 +22,7 @@ blog : http://velog.io/@cyeongy
 
 * [앤서블 설치 및 준비](ansible/install-ansible.md)
 * [앤서블 변수](ansible/ansible-system-variable.md)
+* [앤서블 Playbook & Inventory 예제](https://github.com/cyeongy/ansible/tree/main/pearlabyss) (pearlabyss)
 
 ### Cocoapods
 
