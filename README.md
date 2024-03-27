@@ -42,3 +42,7 @@ blog : http://velog.io/@cyeongy
 ### Java
 
 * [맥 OSX Java, JDK 경로](java/osx/osx-jdk-path.md)
+
+### 카카오게임즈 인턴 과제
+
+* [카카오게임즈 채용연계 인턴 기술직군 사전과제](https://cyeongy.tistory.com/category/study/all)
