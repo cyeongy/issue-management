@@ -5,11 +5,12 @@
 
 문득 생각나는 키워드로 다시 검색을 해보니 내가 겪었던 상황과 비슷한 케이스를 스택오버플로에서 찾을 수 있었다.
 
-(https://stackoverflow.com/questions/20939105/pod-install-returns-fatal-error-ssl-certificate-issue)
 
 ```
 fatal: unable to access 'https://github.com/CocoaPods/Specs.git/': SSL certificate problem: Invalid certificate chain
 ```
+
+(https://stackoverflow.com/questions/20939105/pod-install-returns-fatal-error-ssl-certificate-issue)
 
 ``` bash
 GIT_SSL_NO_VERIFY=true pod install
