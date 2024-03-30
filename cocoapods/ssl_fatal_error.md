@@ -7,7 +7,9 @@
 
 (https://stackoverflow.com/questions/20939105/pod-install-returns-fatal-error-ssl-certificate-issue)
 
+```
 fatal: unable to access 'https://github.com/CocoaPods/Specs.git/': SSL certificate problem: Invalid certificate chain
+```
 
 ``` bash
 GIT_SSL_NO_VERIFY=true pod install
