@@ -27,6 +27,7 @@ blog : http://velog.io/@cyeongy
 * [Cocoapods 사내망 구축하기](cocoapods/build-private-cocoapods.md)
 * [Spec Repo](cocoapods/spec-repo.md)
 * [Lib Repo](cocoapods/lib-repo.md)
+* [SSL FATAL ERROR](cocoapods/ssl_fatal_error.md)
 
 ### docker
 
